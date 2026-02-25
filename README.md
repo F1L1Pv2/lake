@@ -1,3 +1,6 @@
+# ARCHIVED REPO!!!!
+repo was migrated here https://codeberg.org/dcraftbg/lake
+
 # Lake
 
 The new generation chat client infrastructure 
