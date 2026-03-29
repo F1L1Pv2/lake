@@ -306,7 +306,7 @@ void gtgo(void (*entry)(void* arg), void* arg) {
             perror("mmap stack");
             exit(1);
         }
-        thread->sp_base += GT_STACK_SIZE;
+        thread->sp_base = (void *)((char *)thread->sp_base + GT_STACK_SIZE);
     #endif
     } else {
         thread = (GThread*)scheduler.dead.next;
